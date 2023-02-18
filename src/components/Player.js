@@ -6,4 +6,5 @@ const Player = ({ avatarUrl, name }) => {
     </div>
   )
 }
+
 export default Player

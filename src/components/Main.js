@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import Result from './Result'
 import Display from './Display'
 import Choices from './Choices'
-
 import { getRandomGameItem, calculateWinner } from '../game-logic'
 
 const gameItems = [
@@ -10,20 +9,20 @@ const gameItems = [
     imgUrl: '/images/rock.png',
     id: 0,
     name: 'Rock',
-    beat: 'Scissors',
+    beat: 'Scissors'
   },
   {
     imgUrl: '/images/paper.png',
     id: 1,
     name: 'Paper',
-    beat: 'Rock',
+    beat: 'Rock'
   },
   {
     imgUrl: '/images/scissors.png',
     id: 2,
     name: 'Scissors',
-    beat: 'Paper',
-  },
+    beat: 'Paper'
+  }
 ]
 const Main = () => {
   const [result, setResult] = useState('...')
@@ -45,11 +44,11 @@ const Main = () => {
   return (
     <div className='container'>
       <div className='main'>
-      <Choices
+        <Choices
           gameItems={gameItems}
           handleGameItemChange={handleGameItemChange}
         />
-         <Display />
+        <Display />
         <Result
           user1GameItem={playerGameItem}
           user2GameItem={computerGameItem}

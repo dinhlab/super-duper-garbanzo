@@ -11,4 +11,5 @@ const ChoiceCard = ({ gameItem, handleGameItemChange }) => {
     />
   )
 }
+
 export default ChoiceCard
